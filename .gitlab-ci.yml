@@ -10,7 +10,7 @@ variables:
      LOG_FILE_NAME: pip.txt 
 
 build_job:       
-    stage: step_build
+    stage: stage_build
     script: 
         - echo "...Hello CI ..." 
 
