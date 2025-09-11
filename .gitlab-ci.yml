@@ -8,9 +8,9 @@ variables:
   CICD_VERSION: "v1.0"
   LOG_FILE_NAME: "pip.txt"
 
-build_job:
+build_job:       
   stage: stage_build
-  script:
+  script: 
     - echo "...Hello CI ..."
 
 test_job1:
