@@ -25,6 +25,6 @@ test_job2:
          - echo "This is second test job"
 
 deploy_to_dev_job:
-            stage: stage_deploy
-            script:
-                - echo "Hi i deploy this"                    
+     stage: stage_deploy
+     script:
+        - echo "Hi i deploy this"                    
