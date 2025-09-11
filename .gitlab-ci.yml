@@ -1,30 +1,29 @@
-
 stages:
-    - stage_build
-    - stage_test
-    - stage_deploy
+  - stage_build
+  - stage_test
+  - stage_deploy
 
 variables:
-     OWNER_NAME   : katerina
-     CICD_VERSION : v1.0
-     LOG_FILE_NAME: pip.txt 
+  OWNER_NAME: "katerina"
+  CICD_VERSION: "v1.0"
+  LOG_FILE_NAME: "pip.txt"
 
 build_job:       
-    stage: stage_build
-    script: 
-        - echo "...Hello CI ..." 
+  stage: stage_build
+  script: 
+    - echo "...Hello CI ..."
 
 test_job1:
-    stage: stage_test
-    script:
-         - echo "This is test job" 
+  stage: stage_test
+  script:
+    - echo "This is test job"
 
 test_job2:
-    stage: stage_test
-    script:
-         - echo "This is second test job"
+  stage: stage_test
+  script:
+    - echo "This is second test job"
 
 deploy_to_dev_job:
-     stage: stage_deploy
-     script:
-        - echo "Hi i deploy this"                    
+  stage: stage_deploy
+  script:
+    - echo "Hi I deploy this"
